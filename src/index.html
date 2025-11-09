@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body {
+        width: device-width;
+        height: device-height;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: #febacf;
+        text-align: center;
+        padding: 10px;
+    }
+    .white-block {
+        z-index: 1;
+        width: 80%;
+        height: auto;
+        padding-bottom: 50px;
+        background-color: rgb(255, 255, 255);
+        margin-left: 10%;
+        margin-right: 10%;
+        border-radius: 25px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .buttons {
+        display: inline-block;
+        width: 150px;
+        text-align: center;
+        margin-top: 0px;
+        padding: 15px 30px;
+        font-size: 24px;
+        color: #cd2257;
+        background-color: #febacf;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: 0 4px #e2a6d6;
+        font-family: 'Walter Turncoat';
+    }
+    .buttons:active {
+        box-shadow: 0 2px #e2a6d6;
+        transform: translateY(2px);
+    }
+    #yes-button {
+        margin-left: 30%;
+    }
+    #no-button {
+        margin-left: 13%;
+    }
+
+
+</style>
+<head>
+    <link href="https://fonts.cdnfonts.com/css/cute" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Walter Turncoat' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body style="background-image: url(images/background.png); background-repeat: no-repeat; background-size:cover;">
+    <header>
+        <h1 style="font-family: 'Walter Turncoat', sans-serif; font-size: 45px; color: #cd2257">Welcome, Rabigaaa, babe</h1>
+    </header>
+    <main>
+        <div class="white-block">
+            <image src="images/hello_cat.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 30%;"></image>
+            <h1 style="font-family: 'Walter Turncoat'; text-align: center; font-size: 64px; color: #cd2257">Siyligymdy koruge dainsyn ba?</h1>
+            <button class="buttons" id="yes-button" href="yey.html">YA</button>
+            <button class="buttons" id="no-button" onclick="location.href='sad.html'">JOQ</button>
+        </div>
+    </main>
+</body>
+</html>
