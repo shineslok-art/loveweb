@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowers</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link href='https://fonts.googleapis.com/css?family=Walter Turncoat' rel='stylesheet'>
+    <style>
+        body {
+            background-image: url(images/background.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        #white-block {
+            z-index: 1;
+            width: 80%;
+            height: auto;
+            padding-bottom: 50px;
+            background-color: rgb(255, 255, 255);
+            margin-left: 10%;
+            margin-right: 10%;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        /* make the visual background semi-transparent without changing text opacity
+           using a positioned ::before overlay. This is more robust than changing
+           element opacity because `opacity` affects children. */
+        #cute {
+            position: relative;
+            text-align: center;
+            font-family: 'Walter Turncoat';
+            font-size: 24px;
+            color: #000000;
+            margin-left: 10%;
+            margin-right: 10%;
+            background-image: url(images/flowers.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            background-color: transparent;
+        }
+
+        #cute::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: rgba(255, 255, 255, 0.7);
+            pointer-events: none;
+            border-radius: inherit;
+            z-index: 0;
+        }
+
+        #cute > * {
+            position: relative;
+            z-index: 1;
+        }
+        </style>
+</head>
+<body>
+    <div id="white-block">
+        <img style="display: block; margin-left: auto; margin-right: auto; width: 50%; padding-top: 20px; padding-bottom: 0px;">
+        <h1 style="color: #cd2257; font-family: 'Walter Turncoat'; text-align: center;">Why I Love You!</h1>
+        <div id="cute" style="text-align: center; font-family: 'Walter Turncoat'; font-size: 24px; color: #000000; margin-left: 10%; margin-right: 10%;">
+            <p>1. Sen meni qiyn uaqyttarda kuldirip, happines tugyzu bilesin</p>
+            <p>2. Your kindness and compassion inspire me to be a better person.</p>
+            <p>3. I love the way you laugh; it's contagious and fills my heart with joy.</p>
+            <p>4. You support me in everything I do, and I feel so lucky to have you by my side.</p>
+            <p>5. Your creativity and passion for life make every moment with you exciting.</p>
+            <p>6. I admire your strength and resilience in the face of challenges.</p>
+            <p>7. You have a unique way of making everyone around you feel special and loved.</p>
+            <p>8. Your adventurous spirit encourages me to step out of my comfort zone.</p>
+            <p>9. I appreciate your honesty and the trust we share in our relationship.</p>
+            <p>10. Most importantly, I love you for being you – authentic, wonderful, and irreplaceable.</p>
+        </div>
+        <button onclick="location.href='options.html'" style="display: block; margin-left: auto; margin-right: auto; margin-top: 20px; padding: 15px 30px; font-size: 24px; color: #cd2257; background-color: #febacf; border: none; border-radius: 10px; cursor: pointer; box-shadow: 0 4px #e2a6d6; font-family: 'Walter Turncoat';">Return</button>
+    </div>
